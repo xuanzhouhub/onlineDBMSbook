@@ -1,64 +1,64 @@
 # 目录
 
 ## 第一章 概述
-__1.1__ 什么是系统  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.1.1__ 软件设计的模块化  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.1.2__ 系统的目的  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.1.3__ 系统的设计考虑  
-__1.2__ 什么是数据库管理系统  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.2.1__ 数据库管理系统的功能  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.2.2__ 数据库管理系统的设计考虑  
-__1.3__ 数据库系统简史  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.3.1__ 70年代以前：数据库系统早期形态  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.3.2__ 70-80年代：关系数据库的崛起  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.3.3__ 90年代：开源与新型数据库的萌芽  
-&nbsp;&nbsp;&nbsp;&nbsp; __1.3.4__ 2000年以后：数据库的多样化  
-__1.4__ 本书的内容安排
+__1.1.__ 什么是系统  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.1.1.__ 软件设计的模块化  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.1.2.__ 系统的目的  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.1.3.__ 系统的设计考虑  
+__1.2.__ 什么是数据库管理系统  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.2.1.__ 数据库管理系统的功能  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.2.2.__ 数据库管理系统的设计考虑  
+__1.3.__ 数据库系统简史  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.1.__ 70年代以前：数据库系统早期形态  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.2.__ 70-80年代：关系数据库的崛起  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.3.__ 90年代：开源与新型数据库的萌芽  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.4.__ 2000年以后：数据库的多样化  
+__1.4.__ 本书的内容安排
 	
 ## 第二章 文档数据库
-2.1 文档数据库的基本功能  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.1.1 文档数据模型  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.1.2 文档CRUD操作  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.1.3 接口与程序调用方式  
-	2.2 文档数据库的存储结构  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.1 存储体系结构概览  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2 文档数据库的存储管理  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.3 B树索引  
-	2.3 文档数据库的数据一致性  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.3.1 什么是数据一致性（linearizability）  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.3.2 如何保证数据一致性（日志和并发控制）  
-	2.4 文档数据库的可用性保障  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.4.1 什么是系统的可用性  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.4.2 如何获得可用性（共识协议Raft）  
-	2.5 一致性和性能的折中选择  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.5.1 MongoDB的系统参数设置  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.5.2 MongoDB 的Read / Write Concerns  
+2.1. 文档数据库的基本功能  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.1.1. 文档数据模型  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.1.2. 文档CRUD操作  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.1.3. 接口与程序调用方式  
+	2.2. 文档数据库的存储结构  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.1. 存储体系结构概览  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. 文档数据库的存储管理  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.3. B树索引  
+	2.3. 文档数据库的数据一致性  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.1. 什么是数据一致性（linearizability）  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.2. 如何保证数据一致性（日志和并发控制）  
+	2.4. 文档数据库的可用性保障  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.4.1. 什么是系统的可用性  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.4.2. 如何获得可用性（共识协议Raft）  
+	2.5. 一致性和性能的折中选择  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.5.1. MongoDB的系统参数设置  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.5.2. MongoDB 的Read / Write Concerns  
 		
 ## 第三章 文档数据库设计
-3.1 软件开发的OO建模  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1 概念设计  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.1.2 详细设计  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.1.3 对象的持久化  
-	3.2 数据模型与模式  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.2.1 数据模型  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.2.2 数据库模式  
-	3.3 文档数据库逻辑设计  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.3.1 从对象到文档  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.3.2 嵌套还是引用  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.3.2 范式化与逆范式化  
-	3.4文档数据模式物理设计  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1 辅助索引的创建与使用  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2 Read / Write Concerns的选择  
+3.1. 软件开发的OO建模  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. 概念设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.1.2. 详细设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.1.3. 对象的持久化  
+	3.2. 数据模型与模式  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2.1. 数据模型  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2.2. 数据库模式  
+	3.3. 文档数据库逻辑设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.3.1. 从对象到文档  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.3.2. 嵌套还是引用  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.3.2. 范式化与逆范式化  
+	3.4. 文档数据模式物理设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1. 辅助索引的创建与使用  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2. Read / Write Concerns的选择  
 		
 ## 第四章 关系数据库
-4.1 关系数据库的设计理念  
-&nbsp;&nbsp;&nbsp;&nbsp; 4.1.1 应用逻辑与数据库的分离原则  
-&nbsp;&nbsp;&nbsp;&nbsp; 4.1.2 申明式程序设计语言  
-	4.2 关系模型（指向现有教材）  
-	4.3 关系数据库的存储结构（指向现有教材）  
-	4.4 SQL语言（指向现有教材）  
-	4.5 查询处理与查询优化（指向现有教材）  
-	4.6 SQL的接口与程序调用方式（指向现有教材）  
+4.1. 关系数据库的设计理念  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.1.1. 应用逻辑与数据库的分离原则  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.1.2. 申明式程序设计语言  
+	4.2. 关系模型（指向现有教材）  
+	4.3. 关系数据库的存储结构（指向现有教材）  
+	4.4. SQL语言（指向现有教材）  
+	4.5. 查询处理与查询优化（指向现有教材）  
+	4.6. SQL的接口与程序调用方式（指向现有教材）  
 	
 ## 第五章 关系数据库设计
 5.1 应用出发的数据库设计方式  
