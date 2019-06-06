@@ -1,19 +1,19 @@
 # 目录
 
 ## 第一章 概述
-1.1 什么是系统  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.1.1 软件设计的模块化  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.1.2 系统的目的  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.1.3 系统的设计考虑  
-1.2 什么是数据库管理系统  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1 数据库管理系统的功能  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.2.2 数据库管理系统的设计考虑  
-1.3 数据库系统简史  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.3.1 70年代以前：数据库系统早期形态  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.3.2 70-80年代：关系数据库的崛起  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.3.3 90年代：开源与新型数据库的萌芽  
-&nbsp;&nbsp;&nbsp;&nbsp; 1.3.4 2000年以后：数据库的多样化  
-1.4 本书的内容安排
+__1.1__ 什么是系统  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.1.1__ 软件设计的模块化  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.1.2__ 系统的目的  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.1.3__ 系统的设计考虑  
+__1.2__ 什么是数据库管理系统  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.2.1__ 数据库管理系统的功能  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.2.2__ 数据库管理系统的设计考虑  
+__1.3__ 数据库系统简史  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.1__ 70年代以前：数据库系统早期形态  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.2__ 70-80年代：关系数据库的崛起  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.3__ 90年代：开源与新型数据库的萌芽  
+&nbsp;&nbsp;&nbsp;&nbsp; __1.3.4__ 2000年以后：数据库的多样化  
+__1.4__ 本书的内容安排
 	
 ## 第二章 文档数据库
 2.1 文档数据库的基本功能  
