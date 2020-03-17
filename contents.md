@@ -6,11 +6,11 @@ __[1.1. 什么是系统](chapter1.1.md)__
 &nbsp;&nbsp;&nbsp;&nbsp; 1.1.2. 一个好系统一定是一个好的模块  
 &nbsp;&nbsp;&nbsp;&nbsp; 1.1.3. 折衷  
 
-__[1.2. 什么是数据库管理系统](chapter1.2.md)__   
+__[1.2. 什么是数据管理系统](chapter1.2.md)__   
 &nbsp;&nbsp;&nbsp;&nbsp; 1.2.1. 数据库管理系统的功能  
 &nbsp;&nbsp;&nbsp;&nbsp; 1.2.2. 数据库管理系统的设计考虑  
 
-__1.3. 数据库系统简史__  
+__1.3. 数据管理系统简史__  
 &nbsp;&nbsp;&nbsp;&nbsp; 1.3.1. 70年代以前：数据库系统早期形态  
 &nbsp;&nbsp;&nbsp;&nbsp; 1.3.2. 70-80年代：关系数据库的崛起  
 &nbsp;&nbsp;&nbsp;&nbsp; 1.3.3. 90年代：开源与新型数据库的萌芽  
