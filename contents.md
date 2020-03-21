@@ -7,9 +7,9 @@ __[1.1. 什么是系统](chapter1.1.md)__
 &nbsp;&nbsp;&nbsp;&nbsp; 1.1.3. 折衷  
 
 __[1.2. 什么是数据管理系统](chapter1.2.md)__   
-&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1. 关于数据 
-&nbsp;&nbsp;&nbsp;&nbsp; 1.2.2. 数据管理功能
-&nbsp;&nbsp;&nbsp;&nbsp; 1.2.3. 数据管理系统的目的
+&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1. 关于数据  
+&nbsp;&nbsp;&nbsp;&nbsp; 1.2.2. 数据管理功能  
+&nbsp;&nbsp;&nbsp;&nbsp; 1.2.3. 数据管理系统的目的  
 
 __1.3. 数据管理系统简史__  
 &nbsp;&nbsp;&nbsp;&nbsp; 1.3.1. 70年代以前：数据库系统早期形态  
