@@ -14,7 +14,7 @@
 
 本书还将介绍数据管理系统乃至整个应用软件的扩展方法，从而帮助应用开发者应对业务增长问题。这包括传统SQL数据库的并行化方法与工具，也包括使用NoSQL数据库对应用进行扩展的方案。本书会着重讨论如何调整应用层的业务逻辑，以配合数据库的扩展。
 
-对于传统的SQL数据库，我们已经拥有非常优秀的经典教材，比如由Abraham Silberschatz，Henry F. Korth和S. Sudarshan合著的《Database System Concepts》，由Héctor García-Molina，Jeffrey Ullman和Jennifer Widom合著的《Database System: The Complete Book》，在国内有王珊教授和沙师煊教授合著的《数据库系统概论》。作者认为没有必要重复这些教材的内容。因此，本书对SQL数据库的介绍将相对简略，很多地方只会给出一些索引，引导读者在以上的经典教材中查阅相关内容。
+对于传统的SQL数据库，我们已经拥有若干经典教材，比如由Abraham Silberschatz，Henry F. Korth和S. Sudarshan合著的《Database System Concepts》，由Héctor García-Molina，Jeffrey Ullman和Jennifer Widom合著的《Database System: The Complete Book》，在国内有王珊教授和沙师煊教授合著的《数据库系统概论》。作者认为没有必要重复这些教材的内容。因此，本书对SQL数据库的介绍将相对简略，很多地方只会给出一些索引，引导读者在以上的经典教材中查阅相关内容。
 
 本书的对象是需要使用数据管理系统的使用者。这包括在校的相关专业学生和密切接触数据管理技术的软件从业者。对于只想了解数据管理系统而并不急于去使用它的读者，本书可能难度过高。对于参与数据管理系统开发的技术人员，本书则缺少对系统实现细节的描述。本书聚焦在如何合理使用数据管理系统去构建应用软件。
 
