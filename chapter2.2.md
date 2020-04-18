@@ -1,5 +1,7 @@
 # 文档模型
 
+## 文档模型的表示
+
 本书首先进入文档数据库的世界。凡是将文档模型作为数据模型的数据管理系统，我们统称为文档数据库系统。顾名思义，文档模型就是将数据组织成一个个的文档。文档是一个很模糊的概念。文档模型中的“文档”并不是指我们通常看到的文本或文章，而是像下面这样的数据组织方式：
 
 ```bson
@@ -10,8 +12,7 @@
   "address": "20 Yamaha Street",
   "city": "Beijing"
 }
-```
-```bson
+
 {
   "name": "Jessie Li",
   "birthdate": "Dec 4, 1992",
@@ -55,7 +56,7 @@
       "day":24,
       "month":"Jun",
       "year":1973
-    }
+    }c
   }
 }
 ```
@@ -79,7 +80,7 @@
 {
   "name": "Jason Chang",
   "address": "20 Yamaha Street",
-  "city": "Beijing"
+  "city": "Beijing",
   "email": ["jason.chang@gmail.com", "jchang@163.com", "jasonchang@qq.com"]
 }
 ```
@@ -117,6 +118,72 @@
   "address": "20 Yamaha Street",
   "city": "Beijing"
 }
+
+{
+  "_id": ObjectId("4b2b9f67a1f631733d917a7a"),
+  "x": 3.14
+}
 ```
 
+## 文档的匹配
+
+我们可以在文档模型上实施计算，从而实现数据的存取功能。文档上最常用的计算方式称为文档匹配。回到最初的例子，假设数据库里有如下两个文档：
+
+```bson
+{
+  "name": "Jason Chang",
+  "birthdate": {
+    "day":20,
+    "month":"Jan",
+    "year":2001
+  },
+  "gender": "male",
+  "address": "20 Yamaha Street",
+  "city": "Beijing"
+}
+
+{
+  "name": "Jessie Li",
+   "birthdate": {
+    "day":4,
+    "month":"Dec",
+    "year":1992
+  },
+  "gender": "female",
+  "address": "200 Sichuan Street",
+  "city": "Shanghai"
+}
+```
+
+给定如下一个简单的文档，问它能够上面的那个文档实现匹配？
+
+```bson
+{
+  "gender": "female",
+  "city": "Shanghai"
+}
+```
+
+直观地评判，答案显然是关于Jessie Li的文档。这个简单文档只设定了gender和city两个属性，它和Jessie Li在这两个文档上的取值完全一致。如果一个文档的所有属性都在另一个文档中出现，并且两个文档在这些属性上的取值一致，那么我们就可以称第二个文档为第一个文档的匹配。下面这个文档则无法在数据库中找到匹配。
+
+```bson
+{
+  "gender": "male",
+  "city": "Shanghai"
+}
+```
+
+匹配的定义可以延申到嵌套的文档，比如下面的文档：
+
+```bson
+{
+  "birthdate": {
+    "year":2001
+  }
+}
+```
+
+直观判断，这个文档应该跟Jason Chang的文档匹配。这个文档设定了属性birthdate的子属性year。这个属性的取值正好和Jason Chang在相应属性上的取值一致。如果我们将文档看成树状结构，文档A若是文档B的匹配，那么B一定能通过对A剪枝而得到。
+
+![tree image](chapter2.2.2.jpg)*红色部分的树可视为对蓝色部分剪枝的结果*
 
