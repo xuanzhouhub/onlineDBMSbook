@@ -106,3 +106,17 @@
 }
 ```
 
+在文档数据库中，为了方便识别每一个文档，通常会使用一个称为“ID”的属性给每一个文档赋一个识别号。这样，我们可以通过ID找到任何一个文档。这个ID属性通常是隐藏的，在需要时可以显示出来。
+
+```bson
+{
+  "_id": ObjectId("5037ee4a1084eb3ffeef7228"),
+  "name": "Jason Chang",
+  "birthdate": "Jan 20, 2001",
+  "gender": "male",
+  "address": "20 Yamaha Street",
+  "city": "Beijing"
+}
+```
+
+
