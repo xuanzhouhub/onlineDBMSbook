@@ -2,7 +2,7 @@
 
 本书首先进入文档数据库的世界。凡是将文档模型作为数据模型的数据管理系统，我们统称为文档数据库系统。顾名思义，文档模型就是将数据组织成一个个的文档。文档是一个很模糊的概念。文档模型中的“文档”并不是指我们通常看到的文本或文章，而是像下面这样的数据组织方式：
 
-```json
+```bson
 {
   "name": "Jason Chang",
   "birthdate": "Jan 20, 2001",
@@ -11,7 +11,7 @@
   "city": "Beijing"
 }
 ```
-```json
+```bson
 {
   "name": "Jessie Li",
   "birthdate": "Dec 4, 1992",
@@ -25,7 +25,7 @@
 
 不止如此，文档是可以嵌套的，如下面的例子所示：
 
-```json
+```bson
 {
   "name": "Jason Chang",
   "birthdate": {
@@ -41,7 +41,7 @@
 
 这里，birthdate这个属性的取值不再是一个字符串，而变成了另一个文档，称为子文档。实际上，子文档里面还可以包含子文档。这样的嵌套可以无限进行下去，如下面的例子所示：
 
-```json
+```bson
 {
   "name": "Jason Chang",
   "birthdate": {
@@ -60,6 +60,49 @@
 }
 ```
 
-文档模型实际上是使用树形结构在描述数据。每一棵树代表一个文档，树的叶子节点代表属性值，树的中间节点代表子文档。
+文档模型实际上是用树形结构去描述数据。每一棵树代表一个文档，树的叶子节点代表属性值，树的中间节点代表子文档。
 
+![tree image](chapter2.2.1.jpg)
+
+在上面的例子中，一个属性的取值通常为一个字符串，如“Jason Chang”，或一个数字，如20、2001等。事实上，文档数据库系统中的属性值还可以有多种数据类型，例如浮点型、布尔型、日期、长整型、等等。
+
+```bson
+{"x": 3.14}       //浮点
+{"x": true}       //布尔
+{"x": Date("1988-01-09")}       //日期
+{"x": NumberLong("30000000")}   //长整数
+```
+
+除了不同的数据类型，属性值还可以是数组的形式。例如，如果Jason Chang有三个email地址，我们就可以将它们放进一个数组里。
+
+```bson
+{
+  "name": "Jason Chang",
+  "address": "20 Yamaha Street",
+  "city": "Beijing"
+  "email": ["jason.chang@gmail.com", "jchang@163.com", "jasonchang@qq.com"]
+}
+```
+
+数组里的元素除了是数值，还可以是子文档。
+
+```bson
+{
+  "name": "Jeff Chang",
+  "birthdate": "Jun 24, 973",
+  "gender": "male",
+  "children": [
+    {
+      "name": "Jason Chang",
+      "birthdate": "Jan 20, 2001",
+      "gender": "male",
+    },
+    {
+      "name": "Cindy Chang",
+      "birthdate": "Sep 3, 2005",
+      "gender": "female",
+    }
+  ]
+}
+```
 
