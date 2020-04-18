@@ -21,4 +21,42 @@
 }
 ```
 
-熟悉Javascript或者Web编程的朋友很快能反应过来：这不就是JSON（JavaScript Object Notation）描述对象的方式吗？没错。JSON使用的数据模型就是文档模型。我们通常使用一个文档去描述一个实体或对象。在上面的例子中，我们使用了两个文档分别描述Jason Chang和Jessie Li这两个人。每一个文档的内容放在一对花括号“{”、“}”之中。其内容为多个属性的集合。比如，Jason Chang的文档包括了姓名（name）、生日（birthdate）、性别（gender）、住址（address）、城市（city）五个属性。其中，name属性上的取值为“Jason Chang”，birthdate属性上的取值为“Jan 20, 2001”，如此类推。
+这里，我们使用文档模型对上一章中的两个实体进行了描述。熟悉Javascript或者Web编程的朋友很快能反应过来：这不就是JSON（JavaScript Object Notation）描述对象的方式吗？没错。JSON使用的数据模型就是文档模型。在文档模型中，一个文档通常用于描述一个实体或对象。在上面的例子中，我们使用了两个文档分别描述Jason Chang和Jessie Li这两个人。文档模型通常的表示方式是将一个文档放置在一对花括号“{”、“}”之中。其内容为多个属性值的集合。比如，Jason Chang的文档包括了姓名（name）、生日（birthdate）、性别（gender）、住址（address）、城市（city）五个属性。其中，name属性上的取值为“Jason Chang”，birthdate属性上的取值为“Jan 20, 2001”，如此类推。
+
+不止如此，文档是可以嵌套的，如下面的例子所示：
+
+```json
+{
+  "name": "Jason Chang",
+  "birthdate": {
+    "day":20,
+    "month":"Jan",
+    "year":2001
+  },
+  "gender": "male",
+  "address": "20 Yamaha Street",
+  "city": "Beijing"
+}
+```
+
+这里，birthdate这个属性的取值不再是一个字符串，而变成了另一个文档，称为子文档。实际上，子文档里面还可以包含子文档。这样的嵌套可以无限进行下去，如下面的例子所示：
+
+```json
+{
+  "name": "Jason Chang",
+  "birthdate": {
+    "day":20,
+    "month":"Jan",
+    "year":2001
+  },
+  "father": {
+    "name": "Jeff Chang",
+    "birthdate": {
+      "day":24,
+      "month":"Jun",
+      "year":1973
+    }
+  }
+}
+```
+
