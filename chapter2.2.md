@@ -199,6 +199,8 @@
 }
 ```
 
-这个文档声明自己在birthdate.year上的取值大于2000。那么，它就应该和Jason Chang的文档匹配，因为Jason Changbirthdate.year上的取值为2001，满足这个条件。
+这个文档声明自己在birthdate.year上的取值大于2000。那么，它就应该和Jason Chang的文档匹配，因为Jason在Changbirthdate.year上的取值为2001，满足这个条件。
 
 文档匹配实际上提供了一种查询方式，让我们可以在一个文档集合中找到满足自己需求的文档。
+
+[**上一页<<**](chapter2.1.md) | [**>>下一页**](chapter2.3.md)
