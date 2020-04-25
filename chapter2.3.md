@@ -159,3 +159,22 @@ MongoDB的查询指令还有很多功能细节。这里不再赘述。在实际�
 
 ## 文档的更新
 
+在MongoDB中，我们使用update指令实现对文档的更新。其中，updateOne用于更新单个文档，updateMany用于更新多个文档。
+
+update指令的参数分为两部分，前一个参数用于指定对什么文档做更新，后一个参数指定更新文档的哪些属性。
+
+```bson
+db.person.updateOne(
+   { "name": "Jason Chang" },
+   {
+     $set: { "address": "889 Alibaba Street", "city": "Hangzhou" },
+     $currentDate: { lastModified: true }
+   }
+)
+```
+
+以上的指令首先找到在属性name上取值为“Jason Chang”，然后将这个文档的city属性改为了“Hangzhou”，address属性改为了“889 Alibaba Street”。
+
+
+
+
