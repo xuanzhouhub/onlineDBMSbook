@@ -166,15 +166,48 @@ update指令的参数分为两部分，前一个参数用于指定对什么文�
 ```bson
 db.person.updateOne(
    { "name": "Jason Chang" },
-   {
-     $set: { "address": "889 Alibaba Street", "city": "Hangzhou" },
-     $currentDate: { lastModified: true }
-   }
+   {  $set: { "address": "889 Alibaba Street", "city": "Hangzhou" } }
 )
 ```
 
-以上的指令首先找到在属性name上取值为“Jason Chang”，然后将这个文档的city属性改为了“Hangzhou”，address属性改为了“889 Alibaba Street”。
+以上指令首先找到在属性name上取值为“Jason Chang”，然后将这个文档的city属性改为了“Hangzhou”，address属性改为了“889 Alibaba Street”。这里用的具体指令为updateOne，也就是说，如果文档集person中存在两个名叫Jason Chang的人，那么只有其中一个人的文档会被修改。
+
+```bson
+db.person.updateMany(
+   { "birthdate.year": {$lt: 2000} },
+   {  $set: { "group": "adult" } }
+)
+```
+
+以上指令首先找到在属性birthdate的子属性year上取值小于2000的文档（$lt代表“小于”（less than）），即在2000年之前出生的人，然后将这些人的group属性改为“adult”。这里使用的具体指令为updateMany。因此凡是在2000年之前出生的人，无论多少，都会被更新。有一些被选中的文档可能并没有这个group属性。遇到这种情况，Mongo会自动为这些文档添加group属性，然后再更新它的取值。
+
+## 文档的删除
+
+从一个文档集中删除文档通常使用delete指令。具体指令也分为deleteOne和deleteMany。
+
+```bson
+db.person.deleteMany({})
+```
+
+以上指令没有指定删除对象的条件，它将把文档集person中的所有文档全部删除。
+
+```bson
+db.person.deleteMany( { "name": "Jason Chang" } )
+```
+
+以上指令则是将名叫Jason Chang的人从文档集person中删除。由于使用的具体指令为deleteMany，如果有person中包含两个名叫Jason Chang的人，他们都将被删除。
+
+```bson
+db.person.deleteOne( { "_id": ObjectId("4b2b9f67a1f631733d917a7a") } )
+```
+
+以上指令的目的是将特定ID的文档删除。
 
 
+以上是对文档数据库CRUD操作的简单介绍。在使用具体系统时，比如MongoDB，读者需要查阅相关文档，从而才能准确掌握CRUD指令的具体使用方法。
+
+
+
+[**上一页<<**](chapter2.2.md) | [**>>下一页**](chapter2.4.md)
 
 
