@@ -153,7 +153,7 @@ db.person.find( { "gender": "female", "city": "Shanghai" }, { "name": 1, "city":
 }
 ```
 
-这里，我们只要求系统返回name和city。所得到的查询结果就被大大简化了。（ID属性是文档的标识属性。因此，即使不指定，它也会被返回。）
+这里，我们只要求系统返回name和city两个属性。所得到的查询结果就被大大简化了。（ID属性是文档的标识属性。因此，即使不指定，它也会被返回。）
 
 MongoDB的查询指令还有很多功能细节。这里不再赘述。在实际使用时，读者可以查阅MongoDB的[使用手册](https://docs.mongodb.com/manual/)。
 
