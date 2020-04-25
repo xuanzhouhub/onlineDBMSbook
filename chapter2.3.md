@@ -37,13 +37,13 @@ db.createCollection("myBook", {max : 5000} )
 文档数据库系统允许用户创建任意形式的文档，并将它放置在任意一个文档集中。在MongoDB中，我们可以使用insertOne指令将一个新的文档插入到某个文档集中，比如：
 
 ```bson
-db.person.insertOne({
+db.person.insertOne( {
   "name": "Jason Chang",
   "birthdate": "Jan 20, 2001",
   "gender": "male",
   "address": "20 Yamaha Street",
   "city": "Beijing"
-})
+} )
 ```
 
 上面这个指令将创建一个关于Jason Chang的文档，并将它插入到称为person的文档集中。前文提到，每一个文档通常有一个ID属性，作为文档的标识。如果在插入文档时用户没有设置这个ID属性，MongoDB将会自动为ID属性赋一个唯一值。
@@ -51,16 +51,16 @@ db.person.insertOne({
 我们还可以使用insertMany指令向一个文档集中一次性插入多个文档，比如：
 
 ```bson
-db.book.insertMany([
+db.book.insertMany( [
   {"title":"An Apple Tree", "author":"Steven Tang"},
   {"title":"Home", "author":"Jing Ba"},
   {"title":"Step by Step", "author":"Newton Wei"}
-])
+] )
 ```
 
 这里，我们向文档集book中插入了三个关于书的文档。
 
-## 文档的读取
+## 文档的查询（读取）
 
 假设我们使用下面的命令创建了文档集person，并且往里面插入了两个文档：
 
@@ -94,10 +94,10 @@ db.person.insertMany([
 MongDB提供find指令，让我们在一个文档集中找到想要的文档，比如：
 
 ```bson
-db.person.find({
+db.person.find( {
   "gender": "female",
   "city": "Shanghai"
-})
+} )
 ```
 
 这个指令想要在文档集person中查找gender属性为“female”并且city属性为“Shanghai”的文档，实质上就是和{"gender":"female", "city": "Shanghai"}相匹配的文档。基于文档匹配这种运算方式，我们通常可以这样理解：指令x.find(y)的目的是在x中找到所有的y的匹配。
@@ -122,7 +122,40 @@ db.person.find( { "birthdate.year": { $gt: 2000 } } )
 
 这里的$gt表示“大于”（greater than）。
 
-在不做特殊要求的前提下，find指令
+在不做特殊要求的前提下，find指令将找到所有满足条件的文档，并返回这些文档的所有属性，比如：
 
+```bson
+db.person.find( { "gender": "female", "city": "Shanghai" } )
+结果为：
+{
+  "_id": ObjectId("4b2b9f67a1f631733d917a7a"),
+  "name": "Jessie Li",
+  "birthdate": {
+    "day":4,
+    "month":"Dec",
+    "year":1992
+  },
+  "gender": "female",
+  "address": "200 Sichuan Street",
+  "city": "Shanghai"
+}
+```
 
+很多时候，我们并不需要一个文档的所有属性。find指令可以让我们指定哪些属性是需要被返回的，例如：
+
+```bson
+db.person.find( { "gender": "female", "city": "Shanghai" }, { "name": 1, "city": 1 } )
+结果为：
+{
+  "_id": ObjectId("4b2b9f67a1f631733d917a7a"),
+  "name": "Jessie Li",
+  "city": "Shanghai"
+}
+```
+
+这里，我们只要求系统返回name和city。所得到的查询结果就被大大简化了。（ID属性是文档的标识属性。因此，即使不指定，它也会被返回。）
+
+MongoDB的查询指令还有很多功能细节。这里不再赘述。在实际使用时，读者可以查阅MongoDB的[使用手册](https://docs.mongodb.com/manual/)。
+
+## 文档的更新
 
