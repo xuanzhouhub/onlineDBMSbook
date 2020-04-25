@@ -62,3 +62,67 @@ db.book.insertMany([
 
 ## 文档的读取
 
+假设我们使用下面的命令创建了文档集person，并且往里面插入了两个文档：
+
+```bson
+db.person.insertMany([
+  {
+    "name": "Jason Chang",
+    "birthdate": {
+      "day":20,
+      "month":"Jan",
+      "year":2001
+    },
+    "gender": "male",
+    "address": "20 Yamaha Street",
+    "city": "Beijing"
+  },
+  {
+    "name": "Jessie Li",
+    "birthdate": {
+      "day":4,
+      "month":"Dec",
+      "year":1992
+    },
+    "gender": "female",
+    "address": "200 Sichuan Street",
+    "city": "Shanghai"
+  }
+])
+```
+
+MongDB提供find指令，让我们在一个文档集中找到想要的文档，比如：
+
+```bson
+db.person.find({
+  "gender": "female",
+  "city": "Shanghai"
+})
+```
+
+这个指令想要在文档集person中查找gender属性为“female”并且city属性为“Shanghai”的文档，实质上就是和{"gender":"female", "city": "Shanghai"}相匹配的文档。基于文档匹配这种运算方式，我们通常可以这样理解：指令x.find(y)的目的是在x中找到所有的y的匹配。
+
+文档匹配只是一种基本运算。MongoDB在其上增加了很多灵活性，便于用户表达更广泛的需求。以下指令是想找到city属性为“Shanghai”或“Beijing”的文档：
+
+```bson
+db.person.find( { "city": { $in: [ "Shanghai", "Beijing" ] } } )
+```
+
+同样的目的也可以使用逻辑符号$or来实现：
+
+```bson
+db.person.find( { $or: [ { "city": "Shanghai" }, { "city": "Beijing" } ] } )
+```
+
+以下指令是要找到在属性birthdate的子属性year上取值大于2000的文档：
+
+```bson
+db.person.find( { "birthdate.year": { $gt: 2000 } } )
+```
+
+这里的$gt表示“大于”（greater than）。
+
+在不做特殊要求的前提下，find指令
+
+
+
