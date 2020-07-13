@@ -5,4 +5,5 @@
 
 ## 计算机的数据存储体系
 
-![storage_hierarchy](https://i.stack.imgur.com/RzmKE.jpg)
+![storage_hierarchy](https://i.pinimg.com/originals/55/71/33/55713334e2109df8fdf635edf511ad23.png)
+
