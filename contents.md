@@ -18,27 +18,27 @@ __[1.3. 数据管理系统的历史](chapter1.3.md)__
 __[1.4. 本书的内容安排](chapter1.4.md)__
 	
 ## 第二章 文档数据库（作者：周烜，周欢）
-__2.1. 文档数据库的基本功能__  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.1.1. 文档数据模型  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.1.2. 文档CRUD操作  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.1.3. 接口与程序调用方式  
+__[2.1. 数据模型] (chapter2.1.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.1.1. 数据的组织方式  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.1.2. 数据模型选择
 
-__2.2. 文档数据库的存储结构__  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.1. 存储体系结构概览  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. 文档数据库的存储管理  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.3. B树索引  
+__[2.2. 文档模型] (chapter2.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.1. 模型的表示  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. 文档的匹配 
 
-__2.3. 文档数据库的数据一致性__  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.3.1. 什么是数据一致性（linearizability）  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.3.2. 如何保证数据一致性（日志和并发控制）  
+__[2.3. 文档数据库的基本功能] (chapter2.3.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.1. 文档的组织体系  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.2. 文档的创建  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.3. 文档的查询  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.4. 文档的更新  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3.5. 文档的删除  
 
-__2.4. 文档数据库的可用性保障__  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.4.1. 什么是系统的可用性  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.4.2. 如何获得可用性（共识协议Raft） 
 
-__2.5. 一致性和性能的折中选择__  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.5.1. MongoDB的系统参数设置  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.5.2. MongoDB 的Read / Write Concerns  
+__[2.4. 文档数据库的存储结构] (chapter2.4.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.1. 存储体系结构  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. 文档的物理组织  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.3. 文档集的物理组织
+
 		
 ## 第三章 文档数据库设计（作者：周烜，周欢）
 __3.1. 软件开发的OO建模__  
