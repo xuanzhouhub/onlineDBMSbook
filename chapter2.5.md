@@ -82,11 +82,11 @@ db.student.deleteMany(
 ```
 
 当数据库系统执行数据删除操作时，B+树的结构也会发生改变。假如我们执行上述的删除文档命令，B+树的更新过程如图2.9所示，描述如下: 
-5<center>
+<center>
 	<img src="fig/chapter2.5-2.9-treedelete.jpg" width="60%" alt="B+TreeDelete"/>
 	<br>
 	<div display: inline-block; padding : 2px>
-		图 2.8 B+树删除
+		图 2.9 B+树删除
 	</div>
 </center>
 
