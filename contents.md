@@ -35,9 +35,14 @@ __[2.3. 文档数据库的基本功能] (chapter2.3.md)__
 
 
 __[2.4. 文档数据库的存储结构] (chapter2.4.md)__  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.1. 存储体系结构  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. 文档的物理组织  
-&nbsp;&nbsp;&nbsp;&nbsp; 2.2.3. 文档集的物理组织
+&nbsp;&nbsp;&nbsp;&nbsp; 2.4.1. 存储体系结构  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.4.2. 文档的物理组织  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.4.3. 文档集的物理组织
+
+__[2.4. 文档数据库的索引] (chapter2.5.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.5.1. B+树结构   
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. B+树的插入与删除  
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2.3. 索引创建与使用
 
 		
 ## 第三章 文档数据库设计（作者：周烜，周欢）
