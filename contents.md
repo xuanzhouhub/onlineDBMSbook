@@ -46,11 +46,11 @@ __[2.5. 文档数据库的索引](chapter2.5.md)__
 
 		
 ## 第三章 文档数据库设计（作者：周烜，周欢）
-__[3.1. 数据库设计概述] (chapter3.1.md)__  
+__[3.1. 数据库设计概述](chapter3.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. 基本概念      
 &nbsp;&nbsp;&nbsp;&nbsp; 3.1.2. 设计步骤    
 
-__[3.2. 文档数据库设计实例] (chapter3.2.md)__  
+__[3.2. 文档数据库设计实例](chapter3.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 3.2.1. 需求分析   
 &nbsp;&nbsp;&nbsp;&nbsp; 3.2.2. 概念结构设计  
 &nbsp;&nbsp;&nbsp;&nbsp; 3.2.3. 逻辑结构设计  
