@@ -39,34 +39,25 @@ __[2.4. 文档数据库的存储结构](chapter2.4.md)__
 &nbsp;&nbsp;&nbsp;&nbsp; 2.4.2. 文档的物理组织  
 &nbsp;&nbsp;&nbsp;&nbsp; 2.4.3. 文档集的物理组织
 
-__[2.4. 文档数据库的索引](chapter2.5.md)__  
+__[2.5. 文档数据库的索引](chapter2.5.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 2.5.1. B+树结构   
 &nbsp;&nbsp;&nbsp;&nbsp; 2.2.2. B+树的插入与删除  
 &nbsp;&nbsp;&nbsp;&nbsp; 2.2.3. 索引创建与使用
 
 		
 ## 第三章 文档数据库设计（作者：周烜，周欢）
-__3.1. 数据库设计的基本概念__  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.1.2.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.1.3.   
+__[3.1. 数据库设计概述] (chapter3.1.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. 基本概念      
+&nbsp;&nbsp;&nbsp;&nbsp; 3.1.2. 设计步骤    
 
-__3.2. 文档数据库设计实例之需求分析__  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.2.1.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.2.2.   
+__[3.2. 文档数据库设计实例] (chapter3.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2.1. 需求分析   
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2.2. 概念结构设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2.3. 逻辑结构设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2.4. 物理结构设计   
+  
+   
 
-__3.3. 文档数据库设计实例之概念设计__  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.3.1.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.3.2.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.3.2.   
-
-__3.4. 文档数据库设计实例之结构设计__  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2.   
-
-__3.5. 文档数据库设计综合实例__  
-&nbsp;&nbsp;&nbsp;&nbsp; 3.5.1.   
-&nbsp;&nbsp;&nbsp;&nbsp; 3.5.2.
 		
 ## 第四章 关系数据库 （作者：周烜，周欢）
 __4.1. 关系数据库的设计理念__  
