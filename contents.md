@@ -60,13 +60,20 @@ __[3.2. 文档数据库设计实例](chapter3.2.md)__
 
 		
 ## 第四章 关系数据库 （作者：周烜，周欢）
-__4.1. 关系数据库的设计理念__  
-&nbsp;&nbsp;&nbsp;&nbsp; 4.1.1. 网状模型的问题  
-&nbsp;&nbsp;&nbsp;&nbsp; 4.1.2. 构思思想  
+__4.1. 关系数据库概述__  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.1.1. 关系数据库的产生  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.1.2. 层次模型和网状模型的问题  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.1.3. 关系数据库的构建思想 
 
-__4.2. 关系模型__
+__4.2. 关系模型__  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.2.1. 关系结构  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.2.2. 关系操作    
+&nbsp;&nbsp;&nbsp;&nbsp; 4.2.3. 关系完整性 
 
 __4.3. 关系代数__  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.3.1. 关系运算符  
+&nbsp;&nbsp;&nbsp;&nbsp; 4.3.2. 关系运算    
+&nbsp;&nbsp;&nbsp;&nbsp; 4.3.3. 关系代数表达式  
 
 __4.4. SQL语言__  
 

@@ -9,7 +9,7 @@
 在进行数据库结构设计之前，需要充分了解和分析用户的需求，明确应用的业务流程、数据对象、数据处理的功能和性能要求。需求分析是数据库设计的起点，也是基础，它的结果将直接影响后续的数据库设计步骤，决定数据库设计结果是否合理和实用。
 
 <center>
-	<img src="fig/chapter3.2-3.1-business.jpg" width="70%" alt="business processing" />
+	<img src="fig/chapter3.2-3.1-business.jpg" width="60%" alt="business processing" />
 	<br>
 	<div display: inline-block; padding : 2px>
 		图 3.1 博客网站业务流程
@@ -26,7 +26,7 @@
 * 博客编辑界面：编辑博客的标题，具体内容并进行发布。
 
 <center>
-	<img src="fig/chapter3.2-3.2-interface.jpg" width="99%" alt="interface" />
+	<img src="fig/chapter3.2-3.2-interface.jpg" width="85%" alt="interface" />
 	<br>
 	<div display: inline-block; padding : 2px>
 		图 3.2 博客网站前端功能界面
