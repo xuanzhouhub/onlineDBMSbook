@@ -122,20 +122,21 @@ __6.3 关系数据库设计实例__
 &nbsp;&nbsp;&nbsp;&nbsp; 6.3.2  
 &nbsp;&nbsp;&nbsp;&nbsp; 6.3.3   
 
-## 第七章 查询处理
-__7.1 查询处理概述__  
+## 第七章 查询处理与优化
+__[7.1 查询处理] (chapter7.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.1.1 关系数据库的基本框架  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.1.2 查询处理步骤  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.1.3 示例
 
-__7.2 查询处理的性能问题__  
-&nbsp;&nbsp;&nbsp;&nbsp; 7.2.1 衡量算法性能的通用标准   
-&nbsp;&nbsp;&nbsp;&nbsp; 7.2.2 查询处理算法的衡量标准
+__[7.2 查询优化] (chapter7.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 7.2.1 性能衡量标准   
+&nbsp;&nbsp;&nbsp;&nbsp; 7.2.2 代数优化  
+&nbsp;&nbsp;&nbsp;&nbsp; 7.2.3 物理优化  
 
-__7.3 关系算子的实现算法__  
-&nbsp;&nbsp;&nbsp;&nbsp; 7.3.1 选择算子的实现  
-&nbsp;&nbsp;&nbsp;&nbsp; 7.3.2 投影算子的实现   
-&nbsp;&nbsp;&nbsp;&nbsp; 7.3.3 连接算子的实现  
+__[7.3 关系运算算法] (chapter7.3.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 7.3.1 选择运算算法  
+&nbsp;&nbsp;&nbsp;&nbsp; 7.3.2 投影运算算法   
+&nbsp;&nbsp;&nbsp;&nbsp; 7.3.3 连接运算算法  
 
 
 ## 第八章 事务处理
