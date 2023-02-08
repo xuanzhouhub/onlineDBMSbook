@@ -140,34 +140,32 @@ __[7.3 关系运算算法] (chapter7.3.md)__
 
 
 ## 第八章 事务处理
-__8.1 事务的概念__  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.1.1 并发与程序正确性要求  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.1.2 事务的ACID性质   
-&nbsp;&nbsp;&nbsp;&nbsp; 8.1.3 隔离级别 
+__[8.1 事务的基本概念] (chapter8.1.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 8.1.1 事务  
+&nbsp;&nbsp;&nbsp;&nbsp; 8.1.2 数据的正确性   
+&nbsp;&nbsp;&nbsp;&nbsp; 8.1.3 事务的ACID性质   
 
-__8.2 事务的实现方案__  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.2.1 日志机制   
+__[8.2 事务的处理机制] (chapter8.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 8.2.1 日志恢复     
 &nbsp;&nbsp;&nbsp;&nbsp; 8.2.2 并发控制  
 
-__8.3 事务的使用方法__  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.3.1 隔离级别的选择  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.3.2 低效的事务设计  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.3.3 事务的拆分与补偿  
+__[8.3 事务的使用方法] (chapter8.3.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 8.3.1 短事务      
+&nbsp;&nbsp;&nbsp;&nbsp; 8.3.2 事务拆分     
 
-__8.4 文档数据库的事务处理__  
+__[8.4 文档数据库的事务处理] (chapter8.4.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.4.1 标志位的使用  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.4.2 队列的使用  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.4.3 案例  
+&nbsp;&nbsp;&nbsp;&nbsp; 8.4.2 消息队列的使用   
 
  
 ## 第九章 权衡
-__10.1 OLAP和OLTP__  
+__9.1 OLAP和OLTP__  
 
-__10.2 不同类数据库系统的对比__  
+__9.2 不同类数据库系统的对比__  
 
-__10.3 不同数据库系统的构建思路__  
+__9.3 不同数据库系统的构建思路__  
 
-__10.4 做出合理的选择__  
+__9.4 做出合理的选择__  
 
  
  
