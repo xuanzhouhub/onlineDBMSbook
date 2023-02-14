@@ -158,14 +158,17 @@ __[8.4 文档数据库的事务处理] (chapter8.4.md)__
 &nbsp;&nbsp;&nbsp;&nbsp; 8.4.2 消息队列的使用   
 
  
-## 第九章 权衡
-__9.1 OLAP和OLTP__  
+## 第九章 数据库选型
+__[9.1 数据库分类] (chapter9.1.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.1.1 OLTP与OLAP  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.1.2 SQL与NoSQL   
 
-__9.2 不同类数据库系统的对比__  
-
-__9.3 不同数据库系统的构建思路__  
-
-__9.4 做出合理的选择__  
+__[9.2 不同类数据库的对比] (chapter9.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.1 易用性  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.2 可控性  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.3 设计思路  
+  
+__[9.3 做出合理的选择] (chapter9.3.md)__  
 
  
  
