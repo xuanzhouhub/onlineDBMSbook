@@ -60,32 +60,32 @@ __[3.2. 文档数据库设计实例](chapter3.2.md)__
 
 		
 ## 第四章 关系数据库
-__[4.1. 关系数据库概述] (chapter4.1.md)__  
+__[4.1. 关系数据库概述](chapter4.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.1.1. 关系数据库的产生  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.1.2. 层次模型和网状模型的问题  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.1.3. 关系数据库的构建思想 
 
-__[4.2. 关系模型] (chapter4.2.md)__  
+__[4.2. 关系模型](chapter4.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.2.1. 关系结构  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.2.2. 关系操作    
 &nbsp;&nbsp;&nbsp;&nbsp; 4.2.3. 关系完整性 
 
-__[4.3. 关系代数] (chapter4.3.md)__  
+__[4.3. 关系代数](chapter4.3.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.3.1. 关系运算符  
 &nbsp;&nbsp;&nbsp;&nbsp; 4.3.2. 关系运算    
 &nbsp;&nbsp;&nbsp;&nbsp; 4.3.3. 关系代数表达式  
   
 ## 第五章 关系数据库标准语言SQL
-__[5.1 SQL概述 ] (chapter5.1.md)__  
+__[5.1 SQL概述 ](chapter5.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.1.1 SQL的产生  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.1.2 SQ的基本功能 
 
-__[5.2 数据定义] (chapter5.2.md)__  
+__[5.2 数据定义](chapter5.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.2.1 学生-课程数据库  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.2.2 表的定义、修改与删除   
 &nbsp;&nbsp;&nbsp;&nbsp; 5.2.3 索引的定义与删除 
 
-__[5.3 数据查询] (chapter5.3.md)__  
+__[5.3 数据查询](chapter5.3.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.3.1 单表查询    
 &nbsp;&nbsp;&nbsp;&nbsp; 5.3.2 多表查询  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.3.3 聚集查询  
@@ -93,12 +93,12 @@ __[5.3 数据查询] (chapter5.3.md)__
 &nbsp;&nbsp;&nbsp;&nbsp; 5.3.5 嵌套查询  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.3.6 相关子查询
 
-__[5.4 数据操纵] (chapter5.4.md)__  
+__[5.4 数据操纵](chapter5.4.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.4.1 数据插入  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.4.2 数据修改  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.4.3 数据删除
 
-__[5.5 视图] (chapter5.5.md)__  
+__[5.5 视图](chapter5.5.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.5.1 视图定义  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.5.2 视图查询  
 &nbsp;&nbsp;&nbsp;&nbsp; 5.5.3 视图更新   
@@ -123,52 +123,52 @@ __6.3 关系数据库设计实例__
 &nbsp;&nbsp;&nbsp;&nbsp; 6.3.3   
 
 ## 第七章 查询处理与优化
-__[7.1 查询处理] (chapter7.1.md)__  
+__[7.1 查询处理](chapter7.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.1.1 关系数据库的基本框架  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.1.2 查询处理步骤  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.1.3 示例
 
-__[7.2 查询优化] (chapter7.2.md)__  
+__[7.2 查询优化](chapter7.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.2.1 性能衡量标准   
 &nbsp;&nbsp;&nbsp;&nbsp; 7.2.2 代数优化  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.2.3 物理优化  
 
-__[7.3 关系运算算法] (chapter7.3.md)__  
+__[7.3 关系运算算法](chapter7.3.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.3.1 选择运算算法  
 &nbsp;&nbsp;&nbsp;&nbsp; 7.3.2 投影运算算法   
 &nbsp;&nbsp;&nbsp;&nbsp; 7.3.3 连接运算算法  
 
 
 ## 第八章 事务处理
-__[8.1 事务的基本概念] (chapter8.1.md)__  
+__[8.1 事务的基本概念](chapter8.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.1.1 事务  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.1.2 数据的正确性   
 &nbsp;&nbsp;&nbsp;&nbsp; 8.1.3 事务的ACID性质   
 
-__[8.2 事务的处理机制] (chapter8.2.md)__  
+__[8.2 事务的处理机制](chapter8.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.2.1 日志恢复     
 &nbsp;&nbsp;&nbsp;&nbsp; 8.2.2 并发控制  
 
-__[8.3 事务的使用方法] (chapter8.3.md)__  
+__[8.3 事务的使用方法](chapter8.3.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.3.1 短事务      
 &nbsp;&nbsp;&nbsp;&nbsp; 8.3.2 事务拆分     
 
-__[8.4 文档数据库的事务处理] (chapter8.4.md)__  
+__[8.4 文档数据库的事务处理](chapter8.4.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.4.1 标志位的使用  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.4.2 消息队列的使用   
 
  
 ## 第九章 数据库选型
-__[9.1 数据库分类] (chapter9.1.md)__  
+__[9.1 数据库分类](chapter9.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 9.1.1 OLTP与OLAP  
 &nbsp;&nbsp;&nbsp;&nbsp; 9.1.2 SQL与NoSQL   
 
-__[9.2 不同类数据库的对比] (chapter9.2.md)__  
+__[9.2 不同类数据库的对比](chapter9.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 9.2.1 易用性  
 &nbsp;&nbsp;&nbsp;&nbsp; 9.2.2 可控性  
 &nbsp;&nbsp;&nbsp;&nbsp; 9.2.3 设计思路  
   
-__[9.3 做出合理的选择] (chapter9.3.md)__  
+__[9.3 做出合理的选择](chapter9.3.md)__  
 
  
  
