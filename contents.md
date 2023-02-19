@@ -50,7 +50,7 @@ __[3.1. 数据库设计概述](chapter3.1.md)__
 &nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. 基本概念      
 &nbsp;&nbsp;&nbsp;&nbsp; 3.1.2. 设计步骤    
 
-__[3.2. 文档数据库设计实例](chapter3.2.md)__  
+__[3.2. 博客网站的文档数据库设计](chapter3.2.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 3.2.1. 需求分析   
 &nbsp;&nbsp;&nbsp;&nbsp; 3.2.2. 概念结构设计  
 &nbsp;&nbsp;&nbsp;&nbsp; 3.2.3. 逻辑结构设计  
@@ -106,21 +106,22 @@ __[5.5 视图](chapter5.5.md)__
 
 	
 ## 第六章 关系数据库设计
-__6.1 关系模式设计__  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.1.1 ER图  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.1.2 关系范式  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.1.3 关系模型概念设计  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.1.4  
+__[6.1 关系数据库设计概述](chapter6.1.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.1.1 设计步骤  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.1.2 概念结构设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.1.3 逻辑结构设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.1.4 博客网站的关系模式设计 
 
-__6.2 设计规范化__  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.2.1  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.2.2   
-&nbsp;&nbsp;&nbsp;&nbsp; 6.2.3 
+__[6.2 规范化与数据冗余](chapter6.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.2.1 数据冗余   
+&nbsp;&nbsp;&nbsp;&nbsp; 6.2.2 规范化  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.2.3 数据冗余的好处  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.2.4 合理利用数据冗余
 
-__6.3 关系数据库设计实例__  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.3.1   
-&nbsp;&nbsp;&nbsp;&nbsp; 6.3.2  
-&nbsp;&nbsp;&nbsp;&nbsp; 6.3.3   
+__[6.3 购物网站的数据库设计](chapter6.3.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.3.1 概念结构设计  
+&nbsp;&nbsp;&nbsp;&nbsp; 6.3.2 关系模式设计   
+&nbsp;&nbsp;&nbsp;&nbsp; 6.3.3 文档模式设计  
 
 ## 第七章 查询处理与优化
 __[7.1 查询处理](chapter7.1.md)__  
