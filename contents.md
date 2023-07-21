@@ -156,20 +156,45 @@ __[8.3 事务的使用方法](chapter8.3.md)__
 
 __[8.4 文档数据库的事务处理](chapter8.4.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 8.4.1 标志位的使用  
-&nbsp;&nbsp;&nbsp;&nbsp; 8.4.2 消息队列的使用   
+&nbsp;&nbsp;&nbsp;&nbsp; 8.4.2 消息队列的使用
 
- 
-## 第九章 数据库选型
+## 第九章 NoSQL数据库概览
 __[9.1 数据库分类](chapter9.1.md)__  
 &nbsp;&nbsp;&nbsp;&nbsp; 9.1.1 OLTP与OLAP  
-&nbsp;&nbsp;&nbsp;&nbsp; 9.1.2 SQL与NoSQL   
+&nbsp;&nbsp;&nbsp;&nbsp; 9.1.2 SQL与NoSQL
 
-__[9.2 不同类数据库的对比](chapter9.2.md)__  
-&nbsp;&nbsp;&nbsp;&nbsp; 9.2.1 易用性  
-&nbsp;&nbsp;&nbsp;&nbsp; 9.2.2 可控性  
-&nbsp;&nbsp;&nbsp;&nbsp; 9.2.3 设计思路  
-  
-__[9.3 做出合理的选择](chapter9.3.md)__  
+__[9.2 图数据库](chapter9.4.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.1 图模型  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.2 存储引擎  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.3 查询引擎  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.2.4 应用
+
+__[9.3 键值数据库](chapter9.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.3.1 键值模型  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.3.2 应用
+
+__[9.4 列簇式数据库](chapter9.3.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.4.1 列簇式模型  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.4.2 应用
+
+__[9.5 时序数据库](chapter9.5.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.5.1 时序模型  
+&nbsp;&nbsp;&nbsp;&nbsp; 9.5.2 应用
+
+ 
+## 第十章 数据库选型
+
+__[10.1 不同类数据库的对比](chapter10.1.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 10.1.1 易用性  
+&nbsp;&nbsp;&nbsp;&nbsp; 10.2.2 可控性  
+&nbsp;&nbsp;&nbsp;&nbsp; 10.3.3 设计思路  
+
+__[10.2 数据库的基准评测](chapter10.2.md)__  
+&nbsp;&nbsp;&nbsp;&nbsp; 10.2.1 评测方法  
+&nbsp;&nbsp;&nbsp;&nbsp; 10.2.2 评测指标  
+&nbsp;&nbsp;&nbsp;&nbsp; 10.2.3 国际评测组织
+
+__[10.3 做出合理的选择](chapter10.3.md)__  
 
  
  
